@@ -8,6 +8,8 @@ document.getElementById('coupon-input').addEventListener('keyup',function(event)
     {
         applyBtn.removeAttribute('disabled');
         applyBtn.addEventListener('click',function(){
+            event.target.value ='';
+            applyBtn.setAttribute('disabled',true);
             console.log('20% korte hobe');
         })
     }
