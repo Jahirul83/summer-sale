@@ -23,7 +23,7 @@
                 </h2>
                 <div class="flex justify-center items-center mt-8">
                     <h1 class="mr-5">Use Promo Code</h1>
-                    <button class="bg-pink-600 text-white font-semibold px-4 py-2 rounded-lg">SELL200</button>
+                    <p id="sell-coupon" class="bg-pink-600 text-white font-semibold px-4 py-2 rounded-lg">SELL200</p>
                 </div>
             </div>
             <div>
@@ -246,8 +246,8 @@
                         <h2 class="card-title">Have coupon?</h2>
                         <div class="form-control">
                             <div class="input-group">
-                                <input type="text" placeholder="Coupon code" class="input input-bordered w-28 lg:w-full" />
-                                <button class="btn text-white px-5 bg-[#E527B2]" disabled>
+                                <input id="coupon-input" type="text" placeholder="Coupon code" class="input input-bordered w-28 lg:w-full" />
+                                <button id="coupon-apply-btn" class="btn text-white px-5 bg-[#E527B2]" disabled>
                                     Apply
                                 </button>
                             </div>
@@ -259,7 +259,7 @@
                     <div class="card-body">
                         <!-- product entry -->
                         <h1 class="text-2xl font-bold text-center">Added to cart</h1>
-                        <div class="my-2">
+                        <div id="cart-entry" class="my-2">
                             <p>1.sdasd</p>
                             <p>2.sadsd</p>
                             <p>3.asdasda</p>
@@ -305,6 +305,7 @@
 
     </main>
     <script src="js/utilities.js"></script>
+    <script src="js/coupon.js"></script>
 </body>
 
 </html>
