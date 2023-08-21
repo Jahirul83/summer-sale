@@ -38,6 +38,8 @@ function cartEntry(productName){
 
     const p = document.createElement('p');
 
+    p.classList.add('font-semibold');
+
     p.innerHTML =`${count+1}. ${productName}`;
     cardEntryDiv.appendChild(p);
 
