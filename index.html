@@ -42,7 +42,7 @@
                     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- cards -->
                         <!-- first card -->
-                        <div onclick="cardCalculation()" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('first-card','product-title1')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod1.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -55,13 +55,13 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span id="first-card-span">39.00</span>TK</h2>
+                                <h1 id="product-title1" class="text-2xl font-bold">K. Accessories</h1>
+                                <h2 class="text-xl"><span id="first-card">39.00</span>TK</h2>
                             </div>
                         </div>
 
                         <!-- second card -->
-                        <div class="card bg-base-100 shadow-xl hover:scale-110 text-center p-4">
+                        <div onclick="cardCalculation('second-card','product-title2')" class="card bg-base-100 shadow-xl hover:scale-110 text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod2.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -74,14 +74,14 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title2" class="text-2xl font-bold">Chopping Boards</h1>
+                                <h2 class="text-xl"><span id="second-card">25.00</span>TK</h2>
 
                             </div>
                         </div>
 
                         <!-- third card -->
-                        <div class="card bg-base-100 shadow-xl hover:scale-110 text-center p-4">
+                        <div onclick="cardCalculation('third-card','product-title3')" class="card bg-base-100 shadow-xl hover:scale-110 text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod3.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -94,8 +94,8 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title3" class="text-2xl font-bold">Home Cooker</h1>
+                                <h2 class="text-xl"><span id="third-card">49.00</span>TK</h2>
 
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- cards -->
                         <!-- 4th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('4th-card','product-title4')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod4.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -124,13 +124,13 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title4" class="text-2xl font-bold">Sports Back Cap</h1>
+                                <h2 class="text-xl"><span id="4th-card">49.00</span>TK</h2>
 
                             </div>
                         </div>
                         <!-- 5th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('5th-card','product-title5')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod5.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -143,13 +143,13 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title5" class="text-2xl font-bold">Full Jersey Set</h1>
+                                <h2 class="text-xl"><span id="5th-card">69.00</span>TK</h2>
 
                             </div>
                         </div>
                         <!-- 6th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('6th-card','product-title6')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod6.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -162,8 +162,8 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title6" class="text-2xl font-bold">Sports cates</h1>
+                                <h2 class="text-xl"><span id="6th-card">159.00</span>TK</h2>
 
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- cards -->
                         <!-- 7th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('7th-card','product-title7')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod7.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -189,13 +189,13 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title7" class="text-2xl font-bold">Single Relax Chair</h1>
+                                <h2 class="text-xl"><span id="7th-card">185.00</span>TK</h2>
 
                             </div>
                         </div>
                         <!-- 8th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('8th-card','product-title8')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod8.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -208,13 +208,13 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title8" class="text-2xl font-bold">Children play</h1>
+                                <h2 class="text-xl"><span id="8th-card">299.00</span>TK</h2>
 
                             </div>
                         </div>
                         <!-- 9th card -->
-                        <div class="card bg-base-100 shadow-xl text-center p-4">
+                        <div onclick="cardCalculation('9th-card','product-title9')" class="card hover:scale-110 bg-base-100 shadow-xl text-center p-4">
                             <figure class="bg-slate-200"><img src="images/prod9.png" alt="K. Accessories" /></figure>
                             <div class="card-body">
                                 <!-- rating -->
@@ -227,8 +227,8 @@
                                         checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-yellow-400" />
                                 </div>
-                                <h1 class="text-2xl font-bold">K. Accessories</h1>
-                                <h2 class="text-xl"><span>39.00</span>TK</h2>
+                                <h1 id="product-title9" class="text-2xl font-bold">Flexible Sofa</h1>
+                                <h2 class="text-xl"><span id="9th-card">339.00</span>TK</h2>
 
                             </div>
                         </div>
@@ -260,15 +260,13 @@
                         <!-- product entry -->
                         <h1 class="text-2xl font-bold text-center">Added to cart</h1>
                         <div id="cart-entry" class="my-2">
-                            <p>1.sdasd</p>
-                            <p>2.sadsd</p>
-                            <p>3.asdasda</p>
+                            <!-- created p tag in calculation js -->
                         </div>
                         <hr>
                         <div class="my-2">
                             <p>Total price: <span id="total-price">00.00</span>TK</p>
                             <p>Discount: <span>00.00</span>TK</p>
-                            <p>Total: <span>00.00</span>TK</p>
+                            <p>Total: <span id="total-payment">00.00</span>TK</p>
                         </div>
                         <hr>
                         <!-- <button class="text-white mt-4 px-5 bg-[#E527B2] py-3 px-4 rounded-lg font-semibold">Make
@@ -276,7 +274,7 @@
 
                         <!-- popup -->
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn text-white hover:text-black mt-4 px-5 bg-[#E527B2] py-3 px-4 rounded-lg font-semibold"
+                        <button id="purchase-btn" class="btn text-white hover:text-black mt-4 px-5 bg-[#E527B2] py-3 px-4 rounded-lg font-semibold"
                             onclick="my_modal_5.showModal()" disabled>Make
                             Purchase</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">

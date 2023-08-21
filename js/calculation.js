@@ -1,16 +1,40 @@
-function cardCalculation(){
-    const cardElementSpan = document.getElementById('first-card-span');
-    const productPriceString = cardElementSpan.innerText;
-    const productPrice = parseFloat(productPriceString);
+// card
+function cardCalculation(elementId,productTitle){
+    const productPrice = getValueById(elementId);
+    const productName = getTextById(productTitle);
     
-    const totalPriceSpan = document.getElementById('total-price');
-    const previousTotalPriceString = totalPriceSpan.innerHTML;
-    const previousTotalPrice= parseFloat(previousTotalPriceString);
-    console.log(previousTotalPrice);
-
+    const previousTotalPrice = getValueById('total-price');
+    
     const newTotalPrice = previousTotalPrice + productPrice;
     const newTotalPriceTwoDecimal = newTotalPrice.toFixed(2);
-    console.log(newTotalPrice);
 
-    totalPriceSpan.innerHTML = newTotalPriceTwoDecimal;
+    setValueById('total-price',newTotalPriceTwoDecimal);
+    setValueById('total-payment',newTotalPriceTwoDecimal);
+    const  purchaseBtn = document.getElementById('purchase-btn');
+    if(newTotalPrice >= 200)
+    {
+        purchaseBtn.removeAttribute('disabled');
+    
+    }
+
+    // add to cart entry
+    cartEntry(productName);
+    
+
 }
+
+
+// cart entry
+function cartEntry(productName){
+    console.log(productName)
+    const cartEntry = document.getElementById('cart-entry');
+    const count = cartEntry.childElementCount;
+
+    const p = document.createElement('p');
+
+    p.innerHTML =`${count+1}. ${productName}`;
+    cartEntry.appendChild(p);
+
+}
+
+ 
