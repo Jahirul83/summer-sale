@@ -10,7 +10,15 @@ document.getElementById('coupon-input').addEventListener('keyup',function(event)
         applyBtn.addEventListener('click',function(){
             event.target.value ='';
             applyBtn.setAttribute('disabled',true);
-            console.log('20% korte hobe');
+            
+            const totalPrice = getValueById('total-price');
+            const discount = 0.2 * totalPrice;
+            const discountTwoDecimal = discount.toFixed(2);
+            const newTotal = totalPrice - discount;
+            const newTotalTwoDecimal = newTotal.toFixed(2);
+            setValueById('total-discount',discountTwoDecimal);
+            setValueById('total-payment',newTotalTwoDecimal);
+
         })
     }
     else{

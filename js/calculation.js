@@ -26,14 +26,14 @@ function cardCalculation(elementId,productTitle){
 
 // cart entry
 function cartEntry(productName){
-    console.log(productName)
-    const cartEntry = document.getElementById('cart-entry');
-    const count = cartEntry.childElementCount;
+    // console.log(productName)
+    const cardEntryDiv = document.getElementById('card-entry-div');
+    const count = cardEntryDiv.childElementCount;
 
     const p = document.createElement('p');
 
     p.innerHTML =`${count+1}. ${productName}`;
-    cartEntry.appendChild(p);
+    cardEntryDiv.appendChild(p);
 
 }
 
