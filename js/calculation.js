@@ -4,12 +4,18 @@ function cardCalculation(elementId,productTitle){
     const productName = getTextById(productTitle);
     
     const previousTotalPrice = getValueById('total-price');
+    const previousTotalDiscount = getValueById('total-discount');
+
+    // console.log(previousTotalDiscount);
     
     const newTotalPrice = previousTotalPrice + productPrice;
+    const newTotalPriceDiscount = newTotalPrice - previousTotalDiscount;
+
     const newTotalPriceTwoDecimal = newTotalPrice.toFixed(2);
+    const newTotalPriceDiscountTwoDecimal = newTotalPriceDiscount.toFixed(2);
 
     setValueById('total-price',newTotalPriceTwoDecimal);
-    setValueById('total-payment',newTotalPriceTwoDecimal);
+    setValueById('total-payment',newTotalPriceDiscountTwoDecimal);
     const  purchaseBtn = document.getElementById('purchase-btn');
     if(newTotalPrice >= 200)
     {

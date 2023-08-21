@@ -16,3 +16,6 @@ function getTextById(elementId) {
     return productTitle;
 
 }
+function refresh(){
+    location.reload();
+}
