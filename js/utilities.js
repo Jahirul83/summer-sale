@@ -16,6 +16,8 @@ function getTextById(elementId) {
     return productTitle;
 
 }
+
+// for restore default page  and go back home
 function refresh(){
     location.reload();
 }
