@@ -18,6 +18,6 @@ function getTextById(elementId) {
 }
 
 // for restore default page  and go back home
-function refresh(){
+function refresh() {
     location.reload();
 }
